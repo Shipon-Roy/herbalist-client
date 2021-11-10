@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 
 const Header = () => {
+    const {user, logOut} = useAuth();
     return (
-        <div>
+        <div className="sticky-top">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container">
                     <Link className="navbar-brand" to="home">Niche Products</Link>
@@ -16,10 +18,20 @@ const Header = () => {
                         <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
                         </li>
                         <li className="nav-item">
-                        <Link className="nav-link" to="myOrder">MyOrder</Link>
+                        <Link className="nav-link" to="/allProducts">All Products</Link>
+                        </li>
+                        <li className="nav-item">
+                        <Link className="nav-link" to="/about">About</Link>
+                        </li>
+                        <li className="nav-item">
+                        <Link className="nav-link" to="/dashboard">Dashboard</Link>
                         </li>
                     </ul>
                     </div>
+                    {user?.email ? <button onClick={logOut} className="btn btn-info px-5 py-2">LogOut</button>
+                    :
+                    <Link to="/logIn"><button className="btn btn-info px-5 py-2">LogIn</button></Link>}
+                    <img style={{width: "40px"}} className="rounded-circle" src={user?.photoURL} alt="" />
                 </div>
             </nav>
         </div>
