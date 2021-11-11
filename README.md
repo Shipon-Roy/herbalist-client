@@ -1,6 +1,6 @@
 # Niche products wedsite 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://niche-product12.web.app/).
 
 ## Available Scripts
 

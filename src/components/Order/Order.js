@@ -12,7 +12,7 @@ const Order = () => {
     const onSubmit = data => {
         data.email = user?.email;
         data.status = 'pending'
-        fetch('http://localhost:5000/addOrder', {
+        fetch('https://nameless-inlet-61998.herokuapp.com/addOrder', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -29,7 +29,7 @@ const Order = () => {
     }
 
     useEffect( () => {
-        fetch(`http://localhost:5000/products/${id}`)
+        fetch(`https://nameless-inlet-61998.herokuapp.com/products/${id}`)
         .then(res => res.json())
         .then(result => setProduct(result))
     }, [id])

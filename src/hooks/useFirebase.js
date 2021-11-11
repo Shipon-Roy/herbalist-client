@@ -71,7 +71,7 @@ const useFirebase = () => {
             setIsloading(false)
         })
         return () => unKnownUser;
-    }, [])
+    }, [auth])
 
     const logOut = () => {
         setIsloading(true)
@@ -81,7 +81,7 @@ const useFirebase = () => {
     }
 
     const allUserRegisterData = (email) => {
-        fetch('http://localhost:5000/userData', {
+        fetch('https://nameless-inlet-61998.herokuapp.com/userData', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

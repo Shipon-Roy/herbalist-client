@@ -5,7 +5,7 @@ const MyOrder = () => {
     const {user} = useAuth();
     const [myOrder, setMyOrder] = useState([]);
     useEffect( () => {
-        fetch(`http://localhost:5000/myOrder/${user?.email}`)
+        fetch(`https://nameless-inlet-61998.herokuapp.com/myOrder/${user?.email}`)
         .then(res => res.json())
         .then(data => setMyOrder(data))
     }, [user.email])
@@ -13,7 +13,7 @@ const MyOrder = () => {
     const handleDeleteOrder = id => {
         const sure = window.confirm('Are you sure, you want to order remove')
         if(sure){
-            fetch(`http://localhost:5000/myOrder/${id}`, {
+            fetch(`https://nameless-inlet-61998.herokuapp.com/myOrder/${id}`, {
             method: 'DELETE'
             })
             .then(res => res.json())
@@ -39,7 +39,7 @@ const MyOrder = () => {
                     </tr>
                     </thead>
                     {myOrder?.map((order, index) => (
-                    <tbody>
+                    <tbody key={myOrder._id}>
                         <tr>
                         <td>{index}</td>
                         <td>{order.name}</td>

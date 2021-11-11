@@ -8,7 +8,7 @@ const ManageAllOrders = () => {
     const { register, handleSubmit } = useForm();
 
     useEffect( () => {
-        fetch('http://localhost:5000/allOrder')
+        fetch('https://nameless-inlet-61998.herokuapp.com/allOrder')
         .then(res => res.json())
         .then(data => setAllorder(data))
     }, [])
@@ -16,7 +16,7 @@ const ManageAllOrders = () => {
     const handleDelete = id => {
         const sure = window.confirm('Are you sure, you want to order delete')
         if(sure){
-          fetch(`http://localhost:5000/allOrder/${id}`, {
+          fetch(`https://nameless-inlet-61998.herokuapp.com/allOrder/${id}`, {
           method: 'DELETE'
         })
         .then(res => res.json())
@@ -33,7 +33,7 @@ const ManageAllOrders = () => {
       }
 
       const onSubmit = (data) => {
-          fetch(`http://localhost:5000/status/${orderId}`, {
+          fetch(`https://nameless-inlet-61998.herokuapp.com/status/${orderId}`, {
               method: 'PUT',
               headers: {
                   'content-type': 'application/json'
@@ -71,7 +71,7 @@ const ManageAllOrders = () => {
                             onClick={() => handleOrderId(order?._id)}
                             {...register("status")}
                         >
-                            <option value={order?.status}>{order?.status}</option>
+                            <option placeholder={order.status} value={order?.status}>{order?.status}</option>
                             <option value="approve">approve</option>
                         </select>
                         <button type="submit">Done</button>
