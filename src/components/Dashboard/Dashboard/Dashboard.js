@@ -18,7 +18,7 @@ const Dashboard = () => {
                 <div className="col-md-3 p-5 bg-secondary">
                     <div className="dashboard">
                         <Link to={`${url}`}>
-                            <li className="text-white">My Order</li>
+                            <li className="text-white ">My Order</li>
                         </Link>
                         <Link to={`${url}/addreview`}>
                             <li className="text-white">Review</li>

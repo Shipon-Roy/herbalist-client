@@ -32,6 +32,7 @@ const Header = () => {
                     :
                     <Link to="/logIn"><button className="btn btn-info px-5 py-2">LogIn</button></Link>}
                     <img style={{width: "40px"}} className="rounded-circle" src={user?.photoURL} alt="" />
+                    <span>{user.displayName}</span>
                 </div>
             </nav>
         </div>
