@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {Switch, Route, Link ,useRouteMatch} from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 import MyOrder from '../../MyOrder/MyOrder';
 import AddProduct from '../AddProduct/AddProduct';
 import AddReview from '../AddReview/AddReview';
@@ -11,6 +12,21 @@ import './Dashboard.css';
 
 const Dashboard = () => {
     const {url, path} = useRouteMatch()
+
+    const {user} = useAuth();
+    const [isAdmin, setIsAdmin] = useState(false);
+    useEffect( () => {
+        fetch(`http://localhost:5000/admin/${user?.email}`)
+        .then(res => res.json())
+        .then(data => {
+            if(data[0]?.role === "admin"){
+                setIsAdmin(true)
+            }
+            else{
+                setIsAdmin(false)
+            }
+        })
+    }, [user.email])
     return (
         <div>
             <div className="row">
@@ -26,7 +42,7 @@ const Dashboard = () => {
                         <Link to={`${url}/pay`}>
                             <li className="text-white">Pay</li>
                         </Link>
-                        <div>
+                        {isAdmin && <div>
                             <h5 className="text-white mt-3">Admin</h5>
                         <Link to={`${url}/manageAllOrder`}>
                             <li className="text-white">Manage All Order</li>
@@ -40,7 +56,7 @@ const Dashboard = () => {
                         <Link to={`${url}/manageProducts`}>
                             <li className="text-white">Manage Products</li>
                         </Link>
-                        </div>
+                        </div>}
                     </div>
                 </div>
                 <div className="col-md-9">

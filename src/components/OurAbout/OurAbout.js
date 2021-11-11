@@ -46,7 +46,7 @@ const OurAbout = () => {
             <div className="row p-5">
                 <div className="col-md-4 mt-5">
                     <div className="card h-100">
-                      <img src={img2} class="card-img-top" alt="..."/>
+                      <img src={img2} className="card-img-top" alt="..."/>
                       <div className="card-body">
                         <h5 className="card-title">Anne Haynes</h5>
                         <h6>Director</h6>
@@ -56,7 +56,7 @@ const OurAbout = () => {
                 </div>
                 <div className="col-md-4 mt-5">
                     <div className="card h-100">
-                      <img src={img3} class="card-img-top" alt="..."/>
+                      <img src={img3} className="card-img-top" alt="..."/>
                       <div className="card-body">
                         <h5 className="card-title">Linda Brooks</h5>
                         <h6>Sales Manager</h6>
@@ -66,7 +66,7 @@ const OurAbout = () => {
                 </div>
                 <div className="col-md-4 mt-5">
                     <div className="card h-100">
-                      <img src={img4} class="card-img-top" alt="..."/>
+                      <img src={img4} className="card-img-top" alt="..."/>
                       <div className="card-body">
                         <h5 className="card-title">James Wilson</h5>
                         <h6>HR</h6>

@@ -36,6 +36,7 @@ const useFirebase = () => {
             const user = {email, displayName: name};
             setUser(user);
             setError('')
+            allUserRegisterData(email)
         })
         .catch((error) => {
             setError(error.message)
@@ -77,6 +78,18 @@ const useFirebase = () => {
         signOut(auth)
         .then( () => { })
         .finally( () => setIsloading(false))
+    }
+
+    const allUserRegisterData = (email) => {
+        fetch('http://localhost:5000/userData', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify({email: email})
+        })
+        .then(res => res.json())
+        .then(data => { })
     }
 
     return {

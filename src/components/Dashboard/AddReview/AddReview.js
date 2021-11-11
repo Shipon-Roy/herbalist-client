@@ -3,7 +3,17 @@ import { useForm } from "react-hook-form";
 
 const AddReview = () => {
     const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+    const onSubmit = data => {
+        fetch('http://localhost:5000/addReview', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(res => res.json())
+        .then(result => { })
+    };
     return (
         <div className="my-5">
             <h1 className="my-5 text-center">Send Review</h1>
