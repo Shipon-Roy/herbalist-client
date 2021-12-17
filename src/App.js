@@ -12,6 +12,7 @@ import OurAbout from './components/OurAbout/OurAbout';
 import Dashboard from './components/Dashboard/Dashboard/Dashboard';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Order from './components/Order/Order';
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
@@ -36,6 +37,9 @@ function App() {
               </PrivateRoute>
               <Route path="/about">
                 <OurAbout></OurAbout>
+              </Route>
+              <Route path="/contacts">
+                <Contact></Contact>
               </Route>
               <Route path="/logIn">
                 <LogIn></LogIn>

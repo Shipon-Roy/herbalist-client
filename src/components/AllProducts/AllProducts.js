@@ -10,7 +10,7 @@ const AllProducts = () => {
     }, [])
     return (
         <div className="container my-5">
-            <h1 className="text-center my-5"><strong>BROWSE</strong> MODELS</h1>
+            <h1 className="text-center my-5"><strong>All </strong>Products</h1>
             <div className="row">
                 {
                     products.map(product => <div

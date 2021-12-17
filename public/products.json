@@ -1,73 +1,55 @@
 [
     {
-        "name": "Convertibles",
+        "name": "Tangerine Dream",
         "describtion": "Donec facilisis lectus id risus sodales, eu lobortis odio ullamcorper. Aliquam faucibus hendrerit varius. Aenean iaculis sem urna, non sodales mi facilisis vel. Sed vel libero et eros aliquam dictum. ",
-        "img": "https://i.ibb.co/ZK657nF/img12.png",
+        "img": "https://i.ibb.co/gtTD2m9/img1.png",
         "price":"$9900"
     },
     {
-        "name": "Coupes",
+        "name": "Tangerine Dream",
         "describtion": "Pellentesque dapibus tortor vel malesuada blandit. Nulla facilisi. Cras cursus posuere sagittis. Pellentesque scelerisque porttitor fringilla. Proin id metus ullamcorper, ",
-        "img": "https://i.ibb.co/8b2XmPZ/img11.png",
+        "img": "https://i.ibb.co/Lvnx8pR/img2.png",
         "price":"$8700"
     },
     {
-        "name": "Crossovers",
+        "name": "High CBD 50 Oil",
         "describtion": "Dignissim turpis vitae, pulvinar ex. Donec lacinia viverra tortor quis ultrices. Sed a diam eu felis fermentum vestibulum vitae eget libero. Integer ullamcorper at justo et gravida.",
-        "img": "https://i.ibb.co/8B77D1W/img10.png"
+        "img": "https://i.ibb.co/Wf1KZZ9/img3.png"
     },
     {
-        "name": "Green-cars",
+        "name": "CBD Plus Formula Oil",
         "describtion": "Pellentesque sit amet aliquet nunc, id ullamcorper odio. Donec dictum, purus eget posuere volutpat, neque diam porttitor risus, vel malesuada eros elit sed arcu. Maecenas non varius mi. ",
-        "img": "https://i.ibb.co/C5jGX3s/img9.png",
+        "img": "https://i.ibb.co/nkLjNmj/img4.png",
         "price":"$8600"
     },
     {
-        "name": "Hatchbacks",
+        "name": "Tangerine Dream",
         "describtion": "Aliquam orci velit, bibendum eu finibus in, imperdiet in orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
-        "img": "https://i.ibb.co/QkDChcL/img8.png",
+        "img": "https://i.ibb.co/gWrGBLL/img5.png",
         "price":"$1900"
     },
     {
-        "name": "Pickups-Trucks",
+        "name": "Limelight (Ultra Sour)",
         "describtion": " Nunc tincidunt magna a nulla consectetur dictum. Praesent at quam ac ligula ornare consequat in eu dui. Mauris dapibus justo ac augue pellentesque, ut tristique purus commodo. ",
-        "img": "https://i.ibb.co/BL9Rr4P/img3.png",
+        "img": "https://i.ibb.co/XsH9xX1/img6.png",
         "price":"$6900"
     },
     {
-        "name": "Sedans",
+        "name": "Coconut Based Tinctures",
         "describtion": "Ut et scelerisque ex, vel feugiat enim. Nulla maximus non sem non ultricies. Nulla vitae orci et enim laoreet faucibus in a mi. Praesent eget luctus arcu, nec tempus sem.",
-        "img": "https://i.ibb.co/WPwy4x8/img4.png",
+        "img": "https://i.ibb.co/7tBbqpZ/img7.png",
         "price":"$5900"
     },
     {
-        "name": "SUVs",
+        "name": "Chem Dawg",
         "describtion": "Aliquam placerat ante ipsum. Proin congue orci eget erat auctor, vitae elementum diam sodales. Nulla semper eu purus vel tincidunt. Duis lobortis orci quis venenatis aliquet.",
-        "img": "https://i.ibb.co/ySSzwJQ/img5.png",
+        "img": "https://i.ibb.co/KKqyW8t/img8.png",
         "price":"$2900"
     },
     {
-        "name": "Lincoln MKT 2014",
+        "name": "Tangerine Dream",
         "describtion": "Ut feugiat tincidunt orci, et cursus tortor hendrerit ut. Sed ac risus tortor. Suspendisse ac metus et felis feugiat imperdiet nec non ipsum. Quisque laoreet nulla nec mauris euismod semper. ",
-        "img": "https://i.ibb.co/TRh052G/img6.png",
+        "img": "https://i.ibb.co/Mh2NgPM/img9.png",
         "price":"$4900"
-    },
-    {
-        "name": "KIA Optima 2015",
-        "describtion": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.Donec facilisis lectus id risus sodales, eu lobortis odio ullamcorper. ",
-        "img": "https://i.ibb.co/dD8T22d/img7.png",
-        "price":"$7900"
-    },
-    {
-        "name": "Mazda 3 2015",
-        "describtion": "Aliquam faucibus hendrerit varius. Aenean iaculis sem urna, non sodales mi facilisis vel. Sed vel libero et eros aliquam dictum. Pellentesque dapibus tortor vel malesuada blandit. ",
-        "img": "https://i.ibb.co/HPcpDD7/img2.png",
-        "price":"$3900"
-    },
-    {
-        "name": "Lexus NX Hybrid 2014",
-        "describtion": "Nulla facilisi. Cras cursus posuere sagittis. Pellentesque scelerisque porttitor fringilla. Proin id metus ullamcorper, dignissim turpis vitae, pulvinar ex. ",
-        "img": "https://i.ibb.co/xzHng6q/img1.png",
-        "price":"$8900"
     }
 ]

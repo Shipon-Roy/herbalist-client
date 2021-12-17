@@ -3,10 +3,50 @@ import img1 from '../../images/ourAbout.jpg';
 import img2 from '../../images/teem1.jpg';
 import img3 from '../../images/teem2.jpg';
 import img4 from '../../images/teem3.jpg';
+import abimg from '../../images/about-img.PNG';
 
 const OurAbout = () => {
     return (
         <>
+        <div>
+            <div className="text-center bg-info p-5">
+                <h1>About</h1>
+                <p>Nibh tellus molestie nunc non blandit. Mi tempus imperdiet nulla malesuada pellentesque elit</p>
+            </div>
+        </div>
+        <div className='my-5'>
+            <div className="row mx-3">
+                <div className="col-md-6">
+                    <h1>Our knowledgeable team can help you design experiences tailored to your needs by accessing one of the flower selections</h1>
+                    <p>Elementum eu facilisis sed odio morbi quis commodo odio. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Accumsan sit amet nulla facilisi morbi tempus. Suscipit tellus mauris a diam maecenas sed enim ut sem. Turpis egestas maecenas pharetra convallis posuere</p>
+                </div>
+                <div className="col-md-6">
+                    <img className='w-100' src={abimg} alt="" />
+                </div>
+            </div>
+        </div>
+        {/* counter */}
+        <div>
+                <div className="row mx-3">
+                    <div className="col-md-3">
+                        <h1 className='text-success'>180+</h1>
+                        <p>New products to explore. Arcu vitae elementum curabitur vitae nunc sed</p>
+                    </div>
+                    <div className="col-md-3">
+                        <h1 className='text-success'>3X</h1>
+                        <p>Quis risus sed vulputate odio ut. Arcu vitae elementum curabitur vitae nunc</p>
+                    </div>
+                    <div className="col-md-3">
+                        <h1 className='text-success'>100%</h1>
+                        <p>Mauris a diam maecenas sed enim ut sem curabitur vitae nunc sed</p>
+                    </div>
+                    <div className="col-md-3">
+                        <h1 className='text-success'>11K</h1>
+                        <p>Quis risus sed vulputate odio ut. Arcu vitae elementum curabitur vitae nunc</p>
+                    </div>
+                </div>
+            </div>
+            {/* counter  */}
         <div className="container my-5">
             <h1 className="text-center my-5"><strong>WHO</strong> WE ARE</h1>
             <div className="row">
