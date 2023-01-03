@@ -16,7 +16,7 @@ const Dashboard = () => {
     const {user} = useAuth();
     const [isAdmin, setIsAdmin] = useState(false);
     useEffect( () => {
-        fetch(`https://nameless-inlet-61998.herokuapp.com/admin/${user?.email}`)
+        fetch(`https://herbalist-server.onrender.com/admin/${user?.email}`)
         .then(res => res.json())
         .then(data => {
             if(data[0]?.role === "admin"){

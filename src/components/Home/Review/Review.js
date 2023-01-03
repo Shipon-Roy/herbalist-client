@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 const Review = () => {
     const [reviews, setReviews] = useState([]);
-    fetch('https://nameless-inlet-61998.herokuapp.com/allReview')
+    fetch('https://herbalist-server.onrender.com/allReview')
     .then(res => res.json())
     .then(data => setReviews(data))
     return (

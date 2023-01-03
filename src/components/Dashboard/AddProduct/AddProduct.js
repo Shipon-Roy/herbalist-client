@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 const AddProduct = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-        fetch('https://nameless-inlet-61998.herokuapp.com/addProducts', {
+        fetch('https://herbalist-server.onrender.com/addProducts', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

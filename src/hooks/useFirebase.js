@@ -81,7 +81,7 @@ const useFirebase = () => {
     }
 
     const allUserRegisterData = (email) => {
-        fetch('https://nameless-inlet-61998.herokuapp.com/userData', {
+        fetch('https://herbalist-server.onrender.com/userData', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

@@ -34,6 +34,7 @@ const Home = () => {
             </div>
             {/* banner  */}
             <Products></Products>
+
             <div className='my-5'>
                 <div className="row mx-3">
                     <div className="col-md-6">

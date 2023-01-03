@@ -5,7 +5,7 @@ const MyOrder = () => {
     const {user} = useAuth();
     const [myOrder, setMyOrder] = useState([]);
     useEffect( () => {
-        fetch(`https://nameless-inlet-61998.herokuapp.com/myOrder/${user?.email}`)
+        fetch(`https://herbalist-server.onrender.com/myOrder/${user?.email}`)
         .then(res => res.json())
         .then(data => setMyOrder(data))
     }, [user.email])
@@ -13,7 +13,7 @@ const MyOrder = () => {
     const handleDeleteOrder = id => {
         const sure = window.confirm('Are you sure, you want to order remove')
         if(sure){
-            fetch(`https://nameless-inlet-61998.herokuapp.com/myOrder/${id}`, {
+            fetch(`https://herbalist-server.onrender.com/myOrder/${id}`, {
             method: 'DELETE'
             })
             .then(res => res.json())

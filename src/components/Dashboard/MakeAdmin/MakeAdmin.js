@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 const MakeAdmin = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-        fetch('https://nameless-inlet-61998.herokuapp.com/makeAdmin', {
+        fetch('https://herbalist-server.onrender.com/makeAdmin', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

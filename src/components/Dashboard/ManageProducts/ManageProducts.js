@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const ManageProducts = () => {
     const [products, setProducts] = useState([]);
     useEffect( () => {
-        fetch('https://nameless-inlet-61998.herokuapp.com/products')
+        fetch('https://herbalist-server.onrender.com/products')
         .then(res => res.json())
         .then(data => setProducts(data))
     }, [])
@@ -11,7 +11,7 @@ const ManageProducts = () => {
     const handleDelete = id => {
       const sure = window.confirm('Are you sure, you want to delete')
       if(sure){
-        fetch(`https://nameless-inlet-61998.herokuapp.com/products/${id}`, {
+        fetch(`https://herbalist-server.onrender.com/products/${id}`, {
         method: 'DELETE'
       })
       .then(res => res.json())

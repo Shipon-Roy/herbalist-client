@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Products = () => {
     const [products, setProducts] = useState([]);
     useEffect( () => {
-        fetch('https://nameless-inlet-61998.herokuapp.com/products')
+        fetch('https://herbalist-server.onrender.com/products')
         .then(res => res.json())
         .then(data => setProducts(data))
     }, [])

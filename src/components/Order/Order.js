@@ -12,7 +12,7 @@ const Order = () => {
     const onSubmit = data => {
         data.email = user?.email;
         data.status = 'pending'
-        fetch('https://nameless-inlet-61998.herokuapp.com/addOrder', {
+        fetch('https://herbalist-server.onrender.com/addOrder', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -29,7 +29,7 @@ const Order = () => {
     }
 
     useEffect( () => {
-        fetch(`https://nameless-inlet-61998.herokuapp.com/products/${id}`)
+        fetch(`https://herbalist-server.onrender.com/products/${id}`)
         .then(res => res.json())
         .then(result => setProduct(result))
     }, [id])

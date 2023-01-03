@@ -8,7 +8,7 @@ const ManageAllOrders = () => {
     const { register, handleSubmit } = useForm();
 
     useEffect( () => {
-        fetch('https://nameless-inlet-61998.herokuapp.com/allOrder')
+        fetch('https://herbalist-server.onrender.com/allOrder')
         .then(res => res.json())
         .then(data => setAllorder(data))
     }, [])
@@ -16,7 +16,7 @@ const ManageAllOrders = () => {
     const handleDelete = id => {
         const sure = window.confirm('Are you sure, you want to order delete')
         if(sure){
-          fetch(`https://nameless-inlet-61998.herokuapp.com/allOrder/${id}`, {
+          fetch(`https://herbalist-server.onrender.com/allOrder/${id}`, {
           method: 'DELETE'
         })
         .then(res => res.json())
@@ -33,7 +33,7 @@ const ManageAllOrders = () => {
       }
 
       const onSubmit = (data) => {
-          fetch(`https://nameless-inlet-61998.herokuapp.com/status/${orderId}`, {
+          fetch(`https://herbalist-server.onrender.com/status/${orderId}`, {
               method: 'PUT',
               headers: {
                   'content-type': 'application/json'
